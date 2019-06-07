@@ -160,9 +160,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 550px;
+  }
+}
 .navigation {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   padding: 20px auto;
@@ -242,7 +247,6 @@ footer {
   background-color: #22283A;
   color: #dee2e6;
   font-size: 2rem;
-  width: 40%;
   padding: 1.5rem 2rem;
   border-radius: 10px;
   text-align: center;
@@ -255,4 +259,37 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    max-width: 100%;
+  }
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 97%;
+  }
+  .home .walk .btn {
+    width: 100%;
+    max-width: 500;
+  }
+  .home .walk .walk-img {
+    width: 97%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
